@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVER</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sakedon2151.github.io/naver-cloneproject/index.html">
+    <meta property="og:title" content="SangminPark 2023 Portfolio">
+    <meta property="og:image" content="https://i.ibb.co/Lxmwy5k/naver-thumb.png">
+    <meta property="og:description" content="SangminPark 2023 Portfolio - NAVER clone">
+    <meta property="og:site_name" content="네이버">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    <link rel="shortcut icon" href="./img/icon/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="headerInner con1280">
+                <div class="naviArea">
+                    <ul class="naviLeft">
+                        <li>
+                            <div class="menu_tip tooltip">바로가기</div>
+                            <button class="btn_menu naviBtn" aria-expanded="false"></button>
+                        </li>
+                        <li>
+                            <div class="pay_tip tooltip">네이버페이</div>
+                            <a href="#" class="btn_pay naviBtn"></a>
+                        </li>
+                    </ul>
+                    <ul class="naviRight">
+                        <li>
+                            <div class="talk_tip tooltip">네이버톡</div>
+                            <button class="btn_talk naviBtn" aria-expanded="false"></button>
+                        </li>
+                        <li>
+                            <div class="notify_tip tooltip">알림<span class="dot"></span>혜택</div>
+                            <button class="btn_notify naviBtn" aria-expanded="false"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchArea">
+                    <div class="searchInner">
+                        <h1 class="logo">
+                            <a href="index.html">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path>
+                                </svg>
+                            </a>
+                        </h1>
+                        <form action="https://search.naver.com/search.naver" class="search">
+                            <fieldset>
+                                <div class="input_box">
+                                    <input type="search" placeholder="검색어를 입력해 주세요.">
+                                </div>
+                                <button class="btn_search"></button>
+                            </fieldset>
+                        </form>
+                        <div class="searchBox">
+                            <button class="btn_keyboard">
+                                <span class="btn_keyboard_text"></span>
+                            </button>
+                            <button class="btn_fold"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcutArea">
+                    <ul class="shortcut_item_wrap">
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">메일</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">카페</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">블로그</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">쇼핑</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">뉴스</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">증권</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">부동산</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">지도</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group">
+                                <span class="shortcut_icon"></span>
+                                <span class="shortcut_name">웹툰</span>
+                            </a>
+                        </li>
+                        <li class="shortcut_item">
+                            <a href="#" class="shortcut_group shortcut_plus_btn">
+                                <span class="shortcut_icon"></span>
+                                <span class="blind">바로가기 펼침</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="shortcut_plus">
+                        <a href="#" class="shortcut_plus_title">전체서비스</a>
+                        <ul class="shortcut_plus_list">
+                            <li><a href="#"><span></span>날씨</a></li>
+                            <li><a href="#"><span></span>네이버게임</a></li>
+                            <li><a href="#"><span></span>네이버페이</a></li>
+                            <li><a href="#"><span></span>네이버TV</a></li>
+                            <li><a href="#"><span></span>도서</a></li>
+                            <li><a href="#"><span></span>밴드</a></li>
+                            <li><a href="#"><span></span>사전</a></li>
+                            <li><a href="#"><span></span>쇼핑라이브</a></li>
+                            <li><a href="#"><span></span>스포츠</a></li>
+                            <li><a href="#"><span></span>시리즈</a></li>
+                            <li><a href="#"><span></span>웹소설</a></li>
+                            <li><a href="#"><span></span>지식iN</a></li>
+                            <li><a href="#"><span></span>캘린더</a></li>
+                            <li><a href="#"><span></span>해피빈</a></li>
+                            <li><a href="#"><span></span>MYBOX</a></li>
+                            <li><a href="#"><span></span>VIBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="content">
+            <div class="contentInner con1280 clearfix">
+                <div class="leftColWrap">
+                    <div class="lcModule1 box_module">
+                        <div class="lcModule1Inner">
+                            <a href="#" class="lM1_banner_img">
+                                <img src="./img/content/leftModule/banner.jpeg" alt="banner">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lcModule2 box_module">
+                        <div class="lcModule2Inner">
+                            <div class="lM2_col1 common_navi">
+                                <ul class="common_navi_list">
+                                    <li>
+                                        <a href="#" class="active">뉴스스탠드</a>
+                                        <a href="#">언론사편집</a>
+                                    </li>
+                                    <li><a href="#">엔터</a></li>
+                                    <li><a href="#">스포츠</a></li>
+                                    <li><a href="#">경제</a></li>
+                                </ul>
+                            </div>
+                            <div class="lM2_col2 common_subnavi">
+                                <div class="lM2_col2_left">
+                                    <a href="#">
+                                        전체언론사<i class="lM2_col2_left_icon"></i>
+                                    </a>
+                                </div>
+                                <div class="lM2_col2_center common_navi_before_icon">
+                                    <a href="#" class="common_navi_after_icon">연합뉴스</a>
+                                    <a href="#">기사 제목을 작성해주세요.</a>
+                                </div>
+                                <div class="lM2_col2_right">
+                                    <a href="#">뉴스스탠드</a>
+                                    <a href="#" class="common_navi_before_icon">뉴스홈</a>
+                                </div>
+                            </div>
+                            <div class="lM2_col3 common_content">
+                                <div class="lM2_col3_grid clearfix">
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news1.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news1.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news1.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news1.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news1.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news1.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news2.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news2.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news2.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news2.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news2.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news2.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news3.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news3.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news3.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news3.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news3.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news3.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news4.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news4.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news4.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news4.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news4.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lM2_col3_grid_cell">
+                                        <a href="#" class="lM2_col3_grid_cell_front">
+                                            <img src="./img/content/leftModule/news4.png" alt="img">
+                                        </a>
+                                        <div class="lM2_col3_grid_cell_back">
+                                            <a href="#">구독</a>
+                                            <a href="#">기사보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lM2_col4 common_control">
+                                <div class="page_view">
+                                    <button></button>
+                                    <button class="active"></button>
+                                </div>
+                                <button class="common_control_btn prev_btn"></button>
+                                <div class="common_btn_text">
+                                    <span>
+                                        <span>언론사</span>
+                                        더보기
+                                    </span>
+                                    <span>1</span>
+                                    <span>
+                                        /
+                                        4
+                                    </span>
+                                </div>
+                                <button class="common_control_btn next_btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lcModule3 box_module">
+                        <div class="lcModule3Inner">
+                            <div class="lM3_col1 common_navi">
+                                <ul class="common_navi_list">
+                                    <li><a href="#" class="active">쇼핑</a></li>
+                                    <li><a href="#">맨즈</a></li>
+                                    <li><a href="#">원쁠딜</a></li>
+                                    <li><a href="#">쇼핑라이브</a></li>
+                                </ul>
+                            </div>
+                            <div class="lM3_col2 common_subnavi">
+                                <div class="lM3_col2_left">
+                                    <span class="shoping_navi_title common_navi_after_icon_abs">오늘의 혜택</span>
+                                    <a href="#" class="shoping_navi_text">
+                                        <span><img src="./img/content/leftModule/navi_icon1.png" alt="img"></span>
+                                        <span>
+                                            가을패션 특가 SALE
+                                            <em>UPTO80%</em>
+                                            , 여성 인기언더웨어 SALE UPTO25%
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="lM3_col2_right">
+                                    <div class="shoping_navi_count">
+                                        <span>1</span>
+                                        <span>/13</span>
+                                    </div>
+                                    <button class="shoping_navi_prev_btn">
+                                        <i></i>
+                                    </button>
+                                    <button class="shoping_navi_next_btn">
+                                        <i></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="lM3_col3 common_content">
+                                <div class="lM3_col3_left">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card1.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>황금연휴엔 여행</p>
+                                                    <p>캐리어 최대64%</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card1.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>황금연휴엔 여행</p>
+                                                    <p>캐리어 최대64%</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card1.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>황금연휴엔 여행</p>
+                                                    <p>캐리어 최대64%</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card1.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>황금연휴엔 여행</p>
+                                                    <p>캐리어 최대64%</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card1.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>황금연휴엔 여행</p>
+                                                    <p>캐리어 최대64%</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card2.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>역대급 반응핫해</p>
+                                                    <p>자켓or원피스</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card2.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>역대급 반응핫해</p>
+                                                    <p>자켓or원피스</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card2.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>역대급 반응핫해</p>
+                                                    <p>자켓or원피스</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card2.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>역대급 반응핫해</p>
+                                                    <p>자켓or원피스</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shoping_card">
+                                                <a href="#" class="shoping_card_img">
+                                                    <img src="./img/content/leftModule/shoping_card2.jpeg" alt="img">
+                                                </a>
+                                                <a href="#" class="shoping_card_text">
+                                                    <p>역대급 반응핫해</p>
+                                                    <p>자켓or원피스</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="lM3_col3_right">
+                                    <div class="all_seller_tab">
+                                        <div>
+                                            <a href="#">쿠팡</a>
+                                            <span></span>
+                                            <a href="#">G마켓</a>
+                                            <span></span>
+                                            <a href="#">옥션</a>
+                                            <span></span>
+                                            <a href="#">11번가</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">SSG닷컴</a>
+                                            <span></span>
+                                            <a href="#">올리브영</a>
+                                            <span></span>
+                                            <a href="#">위메프</a>
+                                            <span></span>
+                                            <a href="#">GS샵</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">CJ온스타일</a>
+                                            <span></span>
+                                            <a href="#">패션플러스</a>
+                                            <span></span>
+                                            <a href="#">CJ더마켓</a>
+                                        </div>
+                                    </div>
+                                    <div class="quick_menu_tab">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="quick_menu1">
+                                                    <div></div>
+                                                    <p>쇼핑홈</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="quick_menu2">
+                                                    <div></div>
+                                                    <p>리뷰적립</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="quick_menu3">
+                                                    <div></div>
+                                                    <p>주문</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="quick_menu4">
+                                                    <div></div>
+                                                    <p>장바구니</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="ad_banner">
+                                        <div>
+                                            <img src="./img/content/leftModule/shoping_banner.jpeg" alt="img">
+                                        </div>
+                                        <p>슬리퍼만 신고~다이어트 했어요</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lM3_col4 common_control">
+                                <button class="common_control_btn prev_btn"></button>
+                                <div class="common_btn_text">
+                                    <span>
+                                        <span>쇼핑아이템</span>
+                                        더보기
+                                    </span>
+                                    <span>1</span>
+                                    <span>
+                                        /
+                                        13
+                                    </span>
+                                </div>
+                                <button class="common_control_btn next_btn"></button>
+                                <span class="ad_tag">AD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lcModule4 box_module">
+                        <div class="lcModule4Inner">
+                            <div class="lM4_col1 common_navi">
+                                <ul class="common_navi_list">
+                                    <li><a href="#" class="active">추천<em>・</em>구독</a></li>
+                                    <li><a href="#">자동차</a></li>
+                                    <li><a href="#">웹툰</a></li>
+                                    <li><a href="#">패션뷰티</a></li>
+                                    <li><a href="#">레시피</a></li>
+                                    <li><a href="#">리빙</a></li>
+                                    <li><a href="#">책방</a></li>
+                                    <li><a href="#">지식+</a></li>
+                                </ul>
+                            </div>
+                            <div class="lM4_col2 common_subnavi">
+                                <div class="lM4_col2_left">
+                                    <ul>
+                                        <li class="active"><a href="#">전체</a></li>
+                                        <li><a href="#">인기</a></li>
+                                        <li><a href="#">건강</a></li>
+                                        <li><a href="#">게임</a></li>
+                                        <li><a href="#">동물</a></li>
+                                        <li><a href="#">여행</a></li>
+                                        <li><a href="#">연애결혼</a></li>
+                                        <li><a href="#">영화</a></li>
+                                        <li><a href="#">육아</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="lM4_col2_right">구독홈</a>
+                            </div>
+                            <div class="lM4_col3 common_content">
+                                <div class="lM4_col3_wrap">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="recommend_card">
+                                                <a href="#" class="recommend_card_img">
+                                                    <img src="./img/content/leftModule/recommend_card_img.png" alt="img">
+                                                </a>
+                                                <a href="#" class="recommend_card_text">
+                                                    <p>4500만원에 산 299평 땅, 어느 순간 애물단지처럼 느껴진 이유</p>
+                                                    <a href="#" class="recommend_card_uploader">
+                                                        <span class="recommend_card_uploader_icon">
+                                                            <img src="./img/content/leftModule/recommend_card_icon.jpeg" alt="img">
+                                                        </span>
+                                                        <span class="recommend_card_uploader_name">오늘의집</span>
+                                                    </a>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lM4_col4 common_control">
+                                <button class="common_more_btn">
+                                    펼쳐보기
+                                    <i class="common_more_btn_icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightColWrap">
+                    <div class="rcModule1 box_module">
+                        <div class="rcModule1Inner">
+                            <p class="loginSlogan">네이버를 더 안전하고 편리하게 이용하세요</p>
+                            <a href="#" class="loginBtn">
+                                <i class="loginBtnLogo"></i>
+                                로그인
+                            </a>
+                            <div class="loginTab">
+                                <a href="#">아이디 찾기</a>
+                                <a href="#">비밀번호 찾기</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rcModule2 box_module">
+                        <div class="rcModule2Inner">
+                            <a href="#" class="rM2_banner_img">
+                                <img src="./img/content/rightModule/side_banner.jpg" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rcModule3 box_module">
+                        <div class="rcModule3Inner">
+                            <div class="rM3_title">
+                                <a href="#">날씨</a>
+                                <a href="#">예보 비교</a>
+                                <p>고양시 마두동</p>
+                            </div>
+                            <div class="rM3_content">
+                                <div class="rM3_content_left">
+                                    <a href="#" class="temperature_item">
+                                        <div class="temperature_item_top">
+                                            <div class="temperature_item_left"></div>
+                                            <div class="temperature_item_right">
+                                                19.2°
+                                                <p>맑음</p>
+                                            </div>
+                                        </div>
+                                        <div class="temperature_item_bottom">
+                                            <span>15°</span>
+                                            <span>27°</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="particulates_item">
+                                        <span>
+                                            미세
+                                            <span>보통</span>
+                                        </span>
+                                        <span>
+                                            초미세
+                                            <span>보통</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="rM3_content_right">
+                                    <a href="#" class="tempgraph_item">
+                                        <ul>
+                                            <li class="tempgraph time1">
+                                                <div class="tempgraph_time">15시</div>
+                                                <div class="tempgraph_icon"></div>
+                                                <div class="tempgraph_temp">26°</div>
+                                            </li>
+                                            <li class="tempgraph time2">
+                                                <div class="tempgraph_time">17</div>
+                                                <div class="tempgraph_icon"></div>
+                                                <div class="tempgraph_temp">24°</div>
+                                            </li>
+                                            <li class="tempgraph time3">
+                                                <div class="tempgraph_time">19</div>
+                                                <div class="tempgraph_icon"></div>
+                                                <div class="tempgraph_temp">22°</div>
+                                            </li>
+                                            <li class="tempgraph time4">
+                                                <div class="tempgraph_time">21</div>
+                                                <div class="tempgraph_icon"></div>
+                                                <div class="tempgraph_temp">20°</div>
+                                            </li>
+                                            <li class="tempgraph time5">
+                                                <div class="tempgraph_time">23</div>
+                                                <div class="tempgraph_icon"></div>
+                                                <div class="tempgraph_temp">18°</div>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rcModule4 box_module">
+                        <div class="rcModule4Inner">
+                            <div class="rM4_title">
+                                <a href="#">증시</a>
+                                <button></button>
+                                <div>
+                                    09.24. 14:09
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="rM4_content">
+                                <div class="swiper finance_swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="swiper-slide finance_slide">
+                                            <div class="finance_name">나스닥</div>
+                                            <div class="finance_cost">13,211.81</div>
+                                            <div class="finance_state">
+                                                <i></i>
+                                                12.18
+                                                <span>-0.09%</span>
+                                            </div>
+                                            <div class="finance_graph"><img src="./img/content/rightModule/finance_graph.png" alt="img"></div>
+                                        </a>
+                                        <a href="#" class="swiper-slide finance_slide">
+                                            <div class="finance_name">나스닥</div>
+                                            <div class="finance_cost">13,211.81</div>
+                                            <div class="finance_state">
+                                                <i></i>
+                                                12.18
+                                                <span>-0.09%</span>
+                                            </div>
+                                            <div class="finance_graph"><img src="./img/content/rightModule/finance_graph.png" alt="img"></div>
+                                        </a>
+                                        <a href="#" class="swiper-slide finance_slide">
+                                            <div class="finance_name">나스닥</div>
+                                            <div class="finance_cost">13,211.81</div>
+                                            <div class="finance_state">
+                                                <i></i>
+                                                12.18
+                                                <span>-0.09%</span>
+                                            </div>
+                                            <div class="finance_graph"><img src="./img/content/rightModule/finance_graph.png" alt="img"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dailyboard">
+                                    <ul>
+                                        <li class="dailyboard_cell">
+                                            <a href="#">
+                                                <span>에코프로</span>
+                                                <span>
+                                                    <i></i>
+                                                    957,000
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dailyboard_cell">
+                                            <a href="#">
+                                                <span>에코프로</span>
+                                                <span>
+                                                    <i></i>
+                                                    957,000
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dailyboard_cell">
+                                            <a href="#">
+                                                <span>에코프로</span>
+                                                <span>
+                                                    <i></i>
+                                                    957,000
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dailyboard_more">
+                                            <a href="#">인기종목 더보기</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rcModule5 box_module">
+                        <div class="rcModule5Inner">
+                            <div class="rM5_title">위젯 보드</div>
+                            <div class="rM5_content clearfix">
+                                <div class="widget_box box_module">
+                                    <a href="#" class="box1">
+                                        <div class="box1_inner">
+                                            <span class="widget_name">캘린더</span>
+                                            <div class="widget_content">
+                                                <span>9.24</span>
+                                                <span>일</span>
+                                            </div>
+                                            <span class="widget_login1">로그인하기</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="widget_box box_module">
+                                    <a href="#" class="box2">
+                                        <div class="widget_name"><span>메모</span></div>
+                                        <div class="widget_content">
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li><span class="widget_login2">로그인하기</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="widget_box box_module">
+                                    <a href="#" class="box3">
+                                        <div class="box3_inner">
+                                            <i class="widget_name"></i>
+                                            <div class="widget_content">번역하기</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="widget_box box_module">
+                                    <div class="box4">                                        
+                                        <div class="box4_inner">
+                                            <a href="#" class="widget_name">영어사전</a>
+                                            <a href="#" class="widget_content">
+                                                <div class="widget_content_front">The recipe was handed down from my great-grandmother.</div>
+                                                <div class="widget_content_back">이 레시피는 증조할머니 때부터 내려온 거야.</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="box4_search">
+                                        <span class="box4_search_text">단어 검색하기</span>
+                                    </a>
+                                </div>
+                                <div class="widget_swiper box_module">
+                                    <div class="widget_name">
+                                        <i></i>
+                                        <span>매일 찾는 짧은 즐거움</span>
+                                    </div>
+                                    <div class="widget_content">
+                                        <div class="swiper clipSwiper">
+                                            <div class="swiper-wrapper clipSwiper-wrapper">
+                                                <div class="swiper-slide clipSlide">
+                                                    <a href="#" class="clipSlideImg">
+                                                        <img src="./img/content/rightModule/clip_img.jpeg" alt="img">
+                                                    </a>
+                                                    <a href="#" class="clipSlideText">청소하는 지우개? 너무 신기해서 바로 사봤습니다! 과연 청소가 잘 될까요?
+                                                        #일상 #일상꿀템 #내돈내산 #생활용품 #제품리뷰 #솔직후기
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide clipSlide">
+                                                    <a href="#" class="clipSlideImg">
+                                                        <img src="./img/content/rightModule/clip_img.jpeg" alt="img">
+                                                    </a>
+                                                    <a href="#" class="clipSlideText">청소하는 지우개? 너무 신기해서 바로 사봤습니다! 과연 청소가 잘 될까요?
+                                                        #일상 #일상꿀템 #내돈내산 #생활용품 #제품리뷰 #솔직후기
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide clipSlide">
+                                                    <a href="#" class="clipSlideImg">
+                                                        <img src="./img/content/rightModule/clip_img.jpeg" alt="img">
+                                                    </a>
+                                                    <a href="#" class="clipSlideText">청소하는 지우개? 너무 신기해서 바로 사봤습니다! 과연 청소가 잘 될까요?
+                                                        #일상 #일상꿀템 #내돈내산 #생활용품 #제품리뷰 #솔직후기
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide clipSlide">
+                                                    <a href="#" class="clipSlideImg">
+                                                        <img src="./img/content/rightModule/clip_img.jpeg" alt="img">
+                                                    </a>
+                                                    <a href="#" class="clipSlideText">청소하는 지우개? 너무 신기해서 바로 사봤습니다! 과연 청소가 잘 될까요?
+                                                        #일상 #일상꿀템 #내돈내산 #생활용품 #제품리뷰 #솔직후기
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide clipSlide">
+                                                    <a href="#" class="clipSlideImg">
+                                                        <img src="./img/content/rightModule/clip_img.jpeg" alt="img">
+                                                    </a>
+                                                    <a href="#" class="clipSlideText">청소하는 지우개? 너무 신기해서 바로 사봤습니다! 과연 청소가 잘 될까요?
+                                                        #일상 #일상꿀템 #내돈내산 #생활용품 #제품리뷰 #솔직후기
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide clipSlide">
+                                                    <a href="#" class="clipSlideImg">
+                                                        <img src="./img/content/rightModule/clip_img.jpeg" alt="img">
+                                                    </a>
+                                                    <a href="#" class="clipSlideText">청소하는 지우개? 너무 신기해서 바로 사봤습니다! 과연 청소가 잘 될까요?
+                                                        #일상 #일상꿀템 #내돈내산 #생활용품 #제품리뷰 #솔직후기
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="rM5_mobile">
+                                <span><em>모바일 네이버 메인</em> 열기</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rcModule6 box_module">
+                        <div class="rcModule6Inner">
+                            <a href="#" class="rM6_whaile_btn">
+                                <i class="whaileBtnLogo"></i>
+                                <div class="whaileBtnText">
+                                    <p>나만의 스마트한 브라우저, 웨일</p>
+                                    <p>인터넷을 여는 가장 스마트한 방법</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footerInner con1280">
+                <div class="fBanner">
+                    <a href="#" class="fbCard">
+                        <span class="fbCard_img">
+                            <img src="./img/footer/banner1.jpg" alt="#">
+                        </span>
+                        <span class="fbCard_desc">
+                            <strong class="fbCard_desc_subtitle">초록우산 어린이재단</strong>
+                            <strong class="fbCard_desc_title">일곱 살 나은이 후원하기</strong>
+                            <p class="fbCard_desc_text1">작고 낡은 비닐하우스에서</p>
+                            <p class="fbCard_desc_text2">폭우와 폭염을 견뎌야합니다.</p>
+                        </span>
+                    </a>
+                    <a href="#" class="fbCard">
+                        <span class="fbCard_img">
+                            <img src="./img/footer/banner2.jpg" alt="#">
+                        </span>
+                        <span class="fbCard_desc">
+                            <strong class="fbCard_desc_subtitle">초록우산 어린이재단</strong>
+                            <strong class="fbCard_desc_title">일곱 살 나은이 후원하기</strong>
+                            <p class="fbCard_desc_text1">작고 낡은 비닐하우스에서</p>
+                            <p class="fbCard_desc_text2">폭우와 폭염을 견뎌야합니다.</p>
+                        </span>
+                    </a>
+                    <a href="#" class="fbCard">
+                        <span class="fbCard_img">
+                            <img src="./img/footer/banner3.png" alt="#">
+                        </span>
+                        <span class="fbCard_desc">
+                            <strong class="fbCard_desc_subtitle">초록우산 어린이재단</strong>
+                            <strong class="fbCard_desc_title">일곱 살 나은이 후원하기</strong>
+                            <p class="fbCard_desc_text1">작고 낡은 비닐하우스에서</p>
+                            <p class="fbCard_desc_text2">폭우와 폭염을 견뎌야합니다.</p>
+                        </span>
+                    </a>
+                </div>
+                <div class="fNotice">
+                    <h3 class="fnLeft title">
+                        <a href="#">공지사항</a>
+                    </h3>
+                    <a href="#" class="fnRight title">서비스 전체보기</a>
+                </div>
+                <div class="fAside">
+                    <div class="faPartner">
+                        <div class="partnerLine">
+                            <h3 class="title">Creators</h3>
+                            <a href="#" class="partnerLine_line">크리에이터</a>
+                            <a href="#" class="partnerLine_line">스몰비즈니스</a>
+                        </div>
+                        <div class="partnerLine">
+                            <h3 class="title">Partners</h3>
+                            <a href="#" class="partnerLine_line">SME 풀케어 시스템</a>
+                            <a href="#" class="partnerLine_line">비즈니스 · 광고</a>
+                            <a href="#" class="partnerLine_line">스토어 개설</a>
+                            <a href="#" class="partnerLine_line">지역업체 등록</a>
+                            <a href="#" class="partnerLine_line">엑스퍼트 등록</a>
+                        </div>
+                        <div class="partnerLine">
+                            <h3 class="title">Developers</h3>
+                            <a href="#" class="partnerLine_line">네이버 개발자 센터</a>
+                            <a href="#" class="partnerLine_line">오픈 API</a>
+                            <a href="#" class="partnerLine_line">오픈소스</a>
+                            <a href="#" class="partnerLine_line">네이버 D2</a>
+                            <a href="#" class="partnerLine_line">네이버 D2SF</a>
+                            <a href="#" class="partnerLine_line">네이버 랩스</a>
+                        </div>
+                    </div>
+                    <div class="faService">
+                        <div class="serviceBlock">
+                            <div class="serviceBlock_desc">
+                                <strong class="title">웨일 브라우저</strong>
+                                <a href="#" class="serviceBlock_desc_link">이용안내</a>
+                            </div>
+                            <a href="#" class="serviceBlock_img">
+                                <img src="./img/icon/footer_whaile_icon.png" alt="#">
+                            </a>
+                        </div>
+                        <div class="serviceBlock">
+                            <div class="serviceBlock_desc">
+                                <strong class="title">프로젝트 꽃</strong>
+                                <a href="#" class="serviceBlock_desc_link">바로가기</a>
+                            </div>
+                            <a href="#" class="serviceBlock_img">
+                                <img src="./img/icon/footer_flower_icon.png" alt="#">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fCorp">
+                    <h3 class="blind">네이버 정책 및 약관</h3>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">제휴제안</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="#">청소년보호정책</a></li>
+                        <li><a href="#">네이버 정책</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address class="address"><a href="#">ⓒ NAVER Corp.</a></address>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
